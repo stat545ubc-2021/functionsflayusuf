@@ -23,8 +23,6 @@ The goals of this assignment were:
  
 - README file _README.md_ : provides context and instructions for the project
 
-- .gitignore file: contains information on files not to be tracked
-
 - Two Assignment-1 files _Assignment-1.md_ and _Assignment-1.Rmd_ : this is the first assignment for STAT 545B. In these files, I made a function and documented it, provided examples and tested the function.
 
 - A folder of figures for assignment 1 _Assignment-1_files/figure-gfm_ : contains 3 figures generated from the _Assignment-1.md_ file
