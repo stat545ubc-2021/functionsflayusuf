@@ -13,7 +13,7 @@ Instructions for Assignment B-1 can be viewed [here](https://stat545.stat.ubc.ca
 
 ### Objectives
  
-The goals of this project were:
+The goals of this assignment were:
 
 - To make a function
 - Document a function
