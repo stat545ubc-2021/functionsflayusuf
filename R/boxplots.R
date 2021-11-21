@@ -31,4 +31,6 @@ boxplots = function(data, cat, num) {
                ggplot2::ggplot(ggplot2::aes(x = {{cat}}, y = {{num}}, fill = {{cat}})) +
                ggplot2::geom_boxplot() +
                ggplot2::theme_minimal()
+
+  return(boxplot)
 }
