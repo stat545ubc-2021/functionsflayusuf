@@ -1,6 +1,6 @@
 Package: functionsflayusuf
 Title: Produces side-by-side boxplots
-Version: 0.0.0.9000
+Version: 0.1.0
 Authors@R: 
     person(given = "Fardowsa",
            family = "Yusuf",
