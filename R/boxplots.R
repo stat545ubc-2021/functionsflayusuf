@@ -32,5 +32,5 @@ boxplots = function(data, cat, num) {
                 ggplot2::geom_boxplot() +
                 ggplot2::theme_minimal()
 
-  return(boxplots)
+  print(boxplots)
 }
