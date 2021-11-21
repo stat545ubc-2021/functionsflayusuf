@@ -1,16 +1,24 @@
 Package: functionsflayusuf
-Title: What the Package Does (One Line, Title Case)
+Title: Produces side-by-side boxplots
 Version: 0.0.0.9000
 Authors@R: 
-    person(given = "First",
-           family = "Last",
+    person(given = "Fardowsa",
+           family = "Yusuf",
            role = c("aut", "cre"),
-           email = "first.last@example.com",
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+           email = "fardowsay@live.com")
+Description: Produces box plots for a numeric column across levels of a text/factor column, from a tibble or data frame.
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.2
+Imports: 
+    ggplot2,
+    datateachr,
+    gapminder,
+    dplyr,
+    magrittr,
+    tidyr
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
