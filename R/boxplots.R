@@ -18,19 +18,17 @@
 #' @export
 
 boxplots = function(data, cat, num) {
-  if(!is.factor(dplyr::pull(data, {{cat}})) && !is.character(dplyr::pull(data, {{cat}}))) {
+  if(!is.factor(pull(data, {{cat}})) && !is.character(pull(data, {{cat}}))) {
     stop('I am sorry, `cat` column must be of class character or factor.',
-         'You have provided an object of class:', class(dplyr::pull(data, {{cat}}))[1])
+         'You have provided an object of class:', class(pull(data, {{cat}}))[1])
   }
-  if(!is.numeric(dplyr::pull(data,{{num}}))) {
+  if(!is.numeric(pull(data,{{num}}))) {
     stop('I am sorry, `num` column must be numeric class.',
-         'You have provided an object of class:', class(dplyr::pull(data, {{num}}))[1])
+         'You have provided an object of class:', class(pull(data, {{num}}))[1])
   }
-  boxplot <- data %>%
-               tidyr::drop_na({{cat}}, {{num}}) %>%
-               ggplot2::ggplot(ggplot2::aes(x = {{cat}}, y = {{num}}, fill = {{cat}})) +
-               ggplot2::geom_boxplot() +
-               ggplot2::theme_minimal()
-
-  return(boxplot)
+  data %>%
+    drop_na({{cat}}, {{num}}) %>%
+    ggplot(aes(x = {{cat}}, y = {{num}}, fill = {{cat}})) +
+    geom_boxplot() +
+    theme_minimal()
 }
